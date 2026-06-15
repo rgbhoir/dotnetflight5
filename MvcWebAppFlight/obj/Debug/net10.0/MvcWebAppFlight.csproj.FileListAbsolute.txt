@@ -96,3 +96,4 @@ C:\Projects\dotnet\MvcWebAppFlight\MvcWebAppFlight\obj\Debug\net10.0\refint\MvcW
 C:\Projects\dotnet\MvcWebAppFlight\MvcWebAppFlight\obj\Debug\net10.0\MvcWebAppFlight.pdb
 C:\Projects\dotnet\MvcWebAppFlight\MvcWebAppFlight\obj\Debug\net10.0\MvcWebAppFlight.genruntimeconfig.cache
 C:\Projects\dotnet\MvcWebAppFlight\MvcWebAppFlight\obj\Debug\net10.0\ref\MvcWebAppFlight.dll
+C:\Projects\dotnet\MvcWebAppFlight\MvcWebAppFlight\obj\Debug\net10.0\MvcWebAppFlight.sourcelink.json
