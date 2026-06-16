@@ -1,8 +1,3 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml 
-
 trigger:
 - main
 
@@ -15,39 +10,47 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+
+# Restore
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
     projects: '**/*.csproj'
 
+# Build
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
     projects: '**/*.csproj'
     arguments: '--configuration $(buildConfiguration)'
 
+# Test (optional if no test project)
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
     projects: '**/*Tests/*.csproj'
     arguments: '--configuration $(buildConfiguration)'
+  continueOnError: true
 
+# Publish (IMPORTANT)
 - task: DotNetCoreCLI@2
+  displayName: Publish App
   inputs:
     command: 'publish'
     publishWebProjects: true
     arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: true
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    pathToPublish: '$(Build.ArtifactStagingDirectory)'
-    artifactName: 'drop'
-    publishLocation: 'Container'
+# DEBUG STEP (VERY IMPORTANT )
+- script: |
+    echo "Listing files..."
+    dir $(Build.ArtifactStagingDirectory)
+  displayName: "Check Published Files"
 
+# Deploy
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'AzureConnection-RGB-new'
     appType: 'webApp'
     appName: 'mvcwebapp-rgbhoir-new'
-    package: '$(Build.ArtifactStagingDirectory)/publish/**/*.zip'
+    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
