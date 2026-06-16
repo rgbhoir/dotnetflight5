@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\dotnetflight5\\MvcWebAppFlight\\MvcWebAppFlight.csproj": {}
+    "C:\\projects\\new\\dotnetflight5\\MvcWebAppFlight\\MvcWebAppFlight.csproj": {}
   },
   "projects": {
-    "C:\\projects\\dotnetflight5\\MvcWebAppFlight\\MvcWebAppFlight.csproj": {
+    "C:\\projects\\new\\dotnetflight5\\MvcWebAppFlight\\MvcWebAppFlight.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\dotnetflight5\\MvcWebAppFlight\\MvcWebAppFlight.csproj",
+        "projectUniqueName": "C:\\projects\\new\\dotnetflight5\\MvcWebAppFlight\\MvcWebAppFlight.csproj",
         "projectName": "MvcWebAppFlight",
-        "projectPath": "C:\\projects\\dotnetflight5\\MvcWebAppFlight\\MvcWebAppFlight.csproj",
+        "projectPath": "C:\\projects\\new\\dotnetflight5\\MvcWebAppFlight\\MvcWebAppFlight.csproj",
         "packagesPath": "C:\\Users\\rgbhoir\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\dotnetflight5\\MvcWebAppFlight\\obj\\",
+        "outputPath": "C:\\projects\\new\\dotnetflight5\\MvcWebAppFlight\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
