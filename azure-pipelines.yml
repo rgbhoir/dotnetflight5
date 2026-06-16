@@ -44,3 +44,10 @@ steps:
     pathToPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: 'drop'
     publishLocation: 'Container'
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'AzureConnection-RGB-new'
+    appType: 'webApp'
+    appName: 'mvcwebapp-rgbhoir-new'
+    package: '$(Build.ArtifactStagingDirectory)/publish/**/*.zip'
