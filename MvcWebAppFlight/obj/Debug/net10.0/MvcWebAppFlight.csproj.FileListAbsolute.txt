@@ -195,3 +195,4 @@ C:\projects\dotnetflight5\MvcWebAppFlight\obj\Debug\net10.0\refint\MvcWebAppFlig
 C:\projects\dotnetflight5\MvcWebAppFlight\obj\Debug\net10.0\MvcWebAppFlight.pdb
 C:\projects\dotnetflight5\MvcWebAppFlight\obj\Debug\net10.0\MvcWebAppFlight.genruntimeconfig.cache
 C:\projects\dotnetflight5\MvcWebAppFlight\obj\Debug\net10.0\ref\MvcWebAppFlight.dll
+C:\projects\dotnetflight5\MvcWebAppFlight\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
